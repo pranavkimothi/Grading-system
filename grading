@@ -1,0 +1,32 @@
+//MY THIRD PROGRAM WITH MY CAPTAIN AVIRAL SIR
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    float a;
+    char ch;
+
+    while(1)
+    {
+        printf("do you want to enter marks? Press Y/N \n");
+        scanf("%c",&ch);
+           if(ch=='y'||ch=='Y')
+           {
+               printf("Please enter your marks ");
+               scanf("%f",&a);
+               (a>100)?printf("please enter the marks within the limit\n"):(a>=85)?printf("Grade A\n"):(a>=70)?printf("Grade B\n"):(a>=55)?printf("Grade C\n"):(a>=40)?printf("Grade D\n"):printf("Grade F\n");
+           }
+
+           else
+                {
+                     if(ch=='n'||ch=='N')
+                        exit(0);
+                    else
+                        printf("Please enter a valid key\n");
+                }
+                fflush(stdin);
+    }
+return 0;
+}
